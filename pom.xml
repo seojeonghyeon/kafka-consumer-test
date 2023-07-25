@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.zayden</groupId>
     <artifactId>kafka-consumer-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>kafka-consumer-test</name>
     <description>kafka-consumer-test</description>
     <properties>

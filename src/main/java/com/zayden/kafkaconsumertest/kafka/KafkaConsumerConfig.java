@@ -20,7 +20,7 @@ public class KafkaConsumerConfig {
     @Bean
     public ConsumerFactory<String, String> consumerFactory() throws UnknownHostException {
         Map<String, Object> properties = new HashMap<>();
-        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"127.0.0.1:8092");
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"0.0.0.0:9092,0.0.0.0:9093,0.0.0.0:9094");
         properties.put(ConsumerConfig.GROUP_ID_CONFIG,"peter-consumer02");
         properties.put(ConsumerConfig.GROUP_INSTANCE_ID_CONFIG,"consumer-"+ InetAddress.getLocalHost().getHostName());
         properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
